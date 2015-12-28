@@ -39,5 +39,4 @@ layout: nil
     {% if page.priority %}<priority>{{ page.priority }}</priority>{% endif %}
   </url>
   {% endfor %}
-
 </urlset>
