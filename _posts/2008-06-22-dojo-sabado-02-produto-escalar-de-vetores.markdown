@@ -15,13 +15,10 @@ wordpress_url: http://www.dojosp.epistemol.net/?p=16
 <span style="small;">Como tínhamos uma nova participante, a sessão começou com a apresentação do Dojo. Logo depois, o Fabs deu uma introdução sobre Erlang, a linguagem com a qual estamos realizando os Dojos de sábado. Em seguida, sorteamos a <a href="http://www.creativethink.com/whack/" target="_self">carta da criatividade</a> e deu â€œPut a lion in your heartâ€.</span> <span style="small;">Passadas as formalidades iniciais, escolhemos um problema: calcular o produto escalar entre 2 vetores. Ã‰ um problema simples, porém foi muito bom para praticarmos a linguagem ainda nova para nós, TDD, passos de bebê e outras coisas legais que fazemos no Dojo.</span>
 <span style="small;">Vamos ao problema: dados dois vetores (V1 e V2), deveríamos calcular o produto escalar entre eles, ou seja:
 </span>
-
 <span style="small;">V1 = (a, b, c)</span>
 <span style="small;">V2 = (a', b', c')</span>
 <span style="small;">V1 . V2 = a . a' + b . b' + c . c'</span>
-
 <span style="small;">Discutimos um pouco e fomos logo à prática. Durante a sessão, as interrupções no vermelho foram freqüentes e bem-vindas. Precisamos disso para que o Fabs, quando estivesse na platéia, pudesse tirar as nossas dúvidas a respeito da linguagem. A sessão fluiu muito bem assim, até que chegamos a um código que resolvia o nosso problema. Ficamos tão empolgados que passamos a brincar de escrever testes com vetores diferentes só pra ver passar.</span>
-
 <span style="small;">Com uns 30 minutos para a chegada da retrospectiva, resolvemos mudar a implementação para fazer os cálculos de forma distribuída. A nossa intenção era criar uma </span><span style="small;">árvore binária, de modo que as folhas realizassem a multiplicação de 2 elementos dos vetores de entrada, a raiz de cada subárvore fizesse a soma das suas folhas e a raiz da árvore somasse os seus filhos. Acho que uma imagem pode ajudar:</span>
 <p style="center;"><a href="http://www.dojosp.org/wp-content/uploads/2008/06/produto_escalar_tree.png"><img class="size-medium wp-image-17 aligncenter" style="middle;" src="http://www.dojosp.org/wp-content/uploads/2008/06/produto_escalar_tree.png" alt="Ãrvore binária" width="227" height="251" /></a></p>
 <p style="center;"><img class="aligncenter" style="middle;" src="http://picasaweb.google.com/adolfosousa/Dojo/photo#5214854325348520642" alt="" /></p>
